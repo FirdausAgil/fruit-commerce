@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SayabaFresh</title>
+    <title>SaybaFresh</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876"
@@ -13,13 +13,17 @@
   <body>
     <header>
       <!-- logo -->
+      <div class="items-center border-b-2 w-full">
+        <h1 class="w-full text-center text-2xl font-bold p-4 md:hidden">
+          Profile
+        </h1>
+      </div>
       <div
         class="md:flex md:mx-6 md:my-12 md:items-center"
         style="box-shadow: -12px 0px 37px 0px rgba(230, 235, 243, 0.5)"
       >
         <div
-          id="logo"
-          class="mt-12 md:flex md:justify-center md:items-center md:gap-3 md:mx-auto md:my-auto md:w-[20%]"
+          class="mt-12 md:flex md:justify-center md:items-center md:gap-3 md:mx-auto md:my-auto md:w-[20%] hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,8 +63,7 @@
           </div>
         </div>
         <div
-          id="namalogo"
-          class="bg-[#F2F3F2] mx-6 h-[52px] w-auto my-[20px] rounded-2xl flex md:flex gap-3 px-9 items-center md:m-0 md:w-[40%]"
+          class="bg-[#F2F3F2] mx-6 h-[52px] w-auto my-[20px] rounded-2xl md:flex gap-3 px-9 items-center md:m-0 md:w-[40%] hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +87,7 @@
           <nav class="bg-white rounded-tr-[15px] rounded-tl-[15px] md:w-[100%]">
             <ul class="items-center flex justify-around h-[70px]">
               <li class="hover:scale-125">
-                <button id="btnShop">
+                <a href="../../app/homepage/home.html" id="btnShop">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -101,7 +104,7 @@
                     />
                   </svg>
                   Shop
-                </button>
+                </a>
               </li>
               <li class="hover:scale-125">
                 <a href="../errorpage/error.html">
@@ -204,32 +207,7 @@
         </div>
       </div>
     </header>
-
-    <main id="home" class="">
-      <div class="w-[100%] pt-0 pb-[30px] px-6">
-        <img
-          class="max-w-full mx-auto"
-          src="../../src/img/banner.jpeg"
-          alt=""
-        />
-      </div>
-      <!-- Exclusive offer -->
-      <section class="px-6 mb-32">
-        <div>
-          <div class="flex">
-            <h1 class="font-semibold text-[24px]">Exclusive Offer</h1>
-          </div>
-
-          <!-- cards Product  -->
-          <div
-            class="card grid grid-cols-2 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4"
-            id="cards"
-          ></div>
-        </div>
-      </section>
-    </main>
-
-    <main id="account" class="mt-20 mb-20 md:mt-0 hidden">
+    <main class="mt-8 mb-20 md:mt-0">
       <section>
         <div class="flex gap-8 items-center mb-6 px-16">
           <img
@@ -243,7 +221,7 @@
           </div>
         </div>
 
-        <div class="flex px-7 py-7 justify-between border-y-2">
+        <div class="flex md:px-16 px-7 md:py-5 py-7 justify-between border-y-2">
           <div class="flex gap-4" s>
             <img class="w-7" src="../../src/img/svg/Ordersicon.png" alt="" />
             <p class="font-bold text-[18px]">Orders</p>
@@ -251,15 +229,15 @@
           <button><img src="../../src/img/svg/backarrow.png" alt="" /></button>
         </div>
 
-        <div class="flex px-7 py-7 justify-between border-b-2">
+        <div class="flex md:px-16 px-7 md:py-5 py-7 justify-between border-b-2">
           <div class="flex gap-4" s>
             <img class="w-7" src="../../src/img/svg/id.png" alt="" />
             <p class="font-bold text-[18px]">My Details</p>
           </div>
-          <button><img src="../../src/img/backarrow.png" alt="" /></button>
+          <button><img src="../../src/img/svg/backarrow.png" alt="" /></button>
         </div>
 
-        <div class="flex px-7 py-7 justify-between border-b-2">
+        <div class="flex md:px-16 px-7 md:py-5 py-7 justify-between border-b-2">
           <div class="flex gap-4" s>
             <img class="w-7" src="../../src/img/svg/map.png" alt="" />
             <p class="font-bold text-[18px]">Delivery Address</p>
@@ -267,7 +245,7 @@
           <button><img src="../../src/img/svg/backarrow.png" alt="" /></button>
         </div>
 
-        <div class="flex px-7 py-7 justify-between border-b-2">
+        <div class="flex md:px-16 px-7 md:py-5 py-7 justify-between border-b-2">
           <div class="flex gap-4" s>
             <img class="w-7" src="../../src/img/svg/payment.png" alt="" />
             <p class="font-bold text-[18px]">Payment Method</p>
@@ -275,7 +253,7 @@
           <button><img src="../../src/img/svg/backarrow.png" alt="" /></button>
         </div>
 
-        <div class="flex px-7 py-7 justify-between border-b-2">
+        <div class="flex md:px-16 px-7 md:py-5 py-7 justify-between border-b-2">
           <div class="flex gap-4" s>
             <img class="w-7" src="../../src/img/svg/promo.png" alt="" />
             <p class="font-bold text-[18px]">Promo Card</p>
@@ -283,7 +261,7 @@
           <button><img src="../../src/img/svg/backarrow.png" alt="" /></button>
         </div>
 
-        <div class="flex px-7 py-7 justify-between border-b-2">
+        <div class="flex md:px-16 px-7 md:py-5 py-7 justify-between border-b-2">
           <div class="flex gap-4" s>
             <img class="w-7" src="../../src/img/svg/notif.png" alt="" />
             <p class="font-bold text-[18px]">Notification</p>
@@ -291,7 +269,7 @@
           <button><img src="../../src/img/svg/backarrow.png" alt="" /></button>
         </div>
 
-        <div class="flex px-7 py-7 justify-between border-b-2">
+        <div class="flex md:px-16 px-7 md:py-5 py-7 justify-between border-b-2">
           <div class="flex gap-4" s>
             <img class="w-7" src="../../src/img/svg/help.png" alt="" />
             <p class="font-bold text-[18px]">Help</p>
@@ -299,7 +277,7 @@
           <button><img src="../../src/img/svg/backarrow.png" alt="" /></button>
         </div>
 
-        <div class="flex px-7 py-7 justify-between border-b-2">
+        <div class="flex md:px-16 px-7 md:py-5 py-7 justify-between border-b-2">
           <div class="flex gap-4" s>
             <img class="w-7" src="../../src/img/svg/about.png" alt="" />
             <p class="font-bold text-[18px]">About</p>
@@ -318,6 +296,6 @@
       </section>
     </main>
 
-    <script type="module" src="../../../fruit-commerce/js/home.js"></script>
+    <script type="module" src="../../../fruit-commerce/js/profile.js"></script>
   </body>
 </html>
